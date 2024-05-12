@@ -8,6 +8,10 @@ public class EvenNumbers {
         System.out.print("Enter an integer value: ");
         int number = scanner.nextInt();
 
+
+
+        int sum = 0;
+
         // Check if the number is greater than 100
         if (number > 100) {
             System.out.println("Error: The value entered is bigger than 100.");
@@ -16,8 +20,7 @@ public class EvenNumbers {
             if (number % 2 != 0) {
                 System.out.println("The number will generate odd numbers.");
             } else {
-                System.out.println("Even numbers between 1 and " + number + ":");
-                int sum = 0;
+                System.out.println("Even numbers between 1 and " + number + " :");
                 // Loop through numbers from 1 to the input number
                 for (int i = 1; i <= number; i++) {
                     // Check if the number is even
